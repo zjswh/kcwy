@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>民俗视频</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery.js"></script>
+	<link rel='icon' href='css/img/favicon.ico' type='image/ico' />
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/movie.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/movie.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+</head>
+<body>
+	<div class="body">
+		<div class=" leftSide">
+		    <header>
+		    	<img src="images/logo.png">
+		    </header>
+		    <nav>
+		    	<ul>
+		    		<li onclick="openItem('index')">
+		    		    <div class="bg-color"></div>
+		    		    <div class="content">
+		    		    	<img src="images/home.png" alt="">
+		    				<span>首页</span>
+		    		    </div>
+		    		</li>
+		    		
+		    		<li>
+		    		    <div class="bg-color"></div>
+		    		    <div class="content">
+		    		    	<img src="images/aboutus.png" alt="">
+		    				<span>民间艺人</span>
+		    		    </div>
+		    		</li>
+		    		<li class="item">
+		    		    <div class="bg-color"></div>
+		    		    <div class="content">
+		    		    	<img src="images/blog.png" alt="">
+		    				<span>艺术项目</span>
+		    				<img src="images/show.png" alt="" class="list_icon">
+		    			</div>
+		    		    
+		    		</li>
+		    		<ul class="list">
+	    		    	<li>丽水民间文学</li>
+	    		    	<li>丽水民间戏剧</li>
+	    		    	<li>丽水民间曲艺</li>
+	    		    	<li>丽水民间音乐</li>
+	    		    	<li>丽水民间工艺美术</li>
+	    		    	<li>丽水民间舞蹈与杂技</li>
+	    		    	<li>丽水民间建筑艺术</li> 
+	    		    </ul>
+		    		<li class="has_item" onclick="openItem('essay')">
+		    		    <div class="bg-color"></div>
+		    		    <div class="content">
+		    		    	<img src="images/link.png" alt="">
+		    				<span>文章文献</span>
+		    		    </div>
+		    		</li>
+		    		<li onclick="openItem('movie')">
+		    		    <div class="bg-color"></div>
+		    		    <div class="content">
+		    		    	<img src="images/home.png" alt="">
+		    				<span>民俗视频</span>
+		    		    </div>
+		    		</li>
+		    		<li onclick="openItem('music')">
+		    		    <div class="bg-color"></div>
+		    		    <div class="content">
+		    		    	<img src="images/home.png" alt="">
+		    				<span>民俗音乐</span>
+		    		    </div>
+		    		</li>
+		    		<li onclick="openItem('admin')">
+		    		    <div class="bg-color"></div>
+		    		    <div class="content">
+		    		    	<img src="images/services.png" alt="">
+		    				<span>后台管理</span>
+		    		    </div>
+		    		</li>
+		    	</ul>
+		    </nav>
+		</div>
+		<div class="rightSide">
+			<div class="container-fluid">
+				<div class="row  header">
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 title" >
+						<img src="images/artical/logo.png">
+					</div>
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7"></div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 person">
+						<div class="avatar">
+							<img src="images/default.png">
+						</div>
+						<span class="name">
+							<a href="#" class="login"></a>
+							<a href="#" class="no_login">未登录</a>
+							<ul class="name_list">
+								<li class="pic">修改头像</li>
+								<li class="quit">退出</li>
+							</ul>
+						</span>
+						<img src="images/name_show.png">
+						
+					</div>
+				</div>
+				
+				<!-- <div class="row btn_list">
+					<ul class="pagination" style="margin:0;">
+					  <li><a href="#">&laquo;</a></li>
+					  <li class="active"><a href="#">1</a></li>
+					  <li><a href="#">2</a></li>
+					  <li><a href="#">3</a></li>
+					  <li><a href="#">4</a></li>
+					  <li><a href="#">5</a></li>
+					  <li><a href="#">&raquo;</a></li>
+					</ul>
+				</div> -->
+			</div>
+		</div>
+	</div>
+    
+	
+	<div id="change_box">
+	    <p class="pic_title">选择图片
+	       <span title="关闭" id="close">X</span>
+	    </p>
+	    <div id="pic_container">
+	      <img src="images/default.png">
+	    </div>
+	    <div id="pic_form">
+	      <form id="content_form">
+	          <input type="hidden" name="textfiled" id="textfiled" />
+	          <input type="button" name="btn" class="button" value="浏览" id="btn" />
+	          <input type="file" name="file" class="file"  value="浏览"/>
+	          <input type="submit" value="上传" class="button" id="submit" />
+	     </form>
+	    </div>
+	</div>
+
+</body>
+</html>

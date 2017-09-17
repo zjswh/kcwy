@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script>
+        $.ajax({
+            url: './admin/userDB.php',
+            type: 'POST',
+            success : function(response,status,xhr){
+                var json_arr=  $.parseJSON(response);
+                $.each(json_arr, function(index, val) {
+                    console.log(val.truename);
+                });
+            }
+        });
+    </script>
+    </body>
+
+</html>
